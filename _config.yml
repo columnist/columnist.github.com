@@ -1,0 +1,8 @@
+auto: true
+pygments: true
+server: true
+markdown: rdiscount
+permalink: /:year/:month/:day/:title.html
+baseurl: 
+rdiscount:
+  extensions: [smart]

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class='single'>
+  <div class='post post-{{ page.date | date: '%Y-%m-%d' }} clearfix'>
+    <h2 class='title'><a href='{{ page.url }}'>{{page.title}}</a></h2>
+    <div id='left'>
+      <div class='body'>{{content}}</div>
+    </div>
+    <div id='right'>
+      <div class='date' datetime='{{ page.date | date: '%Y-%m-%d' }}'>
+        <span class='year'>{{ page.date | date: '%Y' }}</span>
+        <span class='month-day'>{{ page.date | date: '%B %d' }}</span>
+      </div>
+    </div>
+  </div>
+</div>

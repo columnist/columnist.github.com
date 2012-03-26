@@ -1,0 +1,178 @@
+/*-----------------------------------
+  Fonts
+-------------------------------------*/
+body {
+  background: #fff;
+  font: 100%/1.4em 'Helvetica Neue', Arial, sans-serif;
+  color: #404040;
+  }
+
+/*-----------------------------------
+  Typography
+
+  16px = 1em
+  14px = 0.875em
+  13px = 0.8185em
+  12px = 0.75em
+
+-------------------------------------*/
+h1,h2,h3,h4,h5 {
+  font-weight: normal;
+  margin: 0;
+  }
+h1 { font-size: 26px; line-height: 30px; margin: 15px 0 5px; }
+h2 { font-size: 22px; line-height: 26px; margin: 0 0 10px; }
+h3 { font-size: 24px; line-height: 28px; margin: 10px 0; }
+h4 { font-size: 22px; line-height: 24px; margin: 10px 0; }
+h5 { font-size: 18px; line-height: 18px; margin: 10px 0; }
+h6 { font-size: 0.75em; margin: 0 0 5px; }
+
+.post h6 {
+  font-weight: bold;
+  margin: 20px 0 5px;
+  }
+.post h2,
+.single h2 {
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 140px;
+  display: block;
+  }
+.post h2 a {
+  color: #404040;
+  }
+div.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  }
+  div.title a {
+    background: url(../images/me.png) no-repeat 0 0;
+    display: block;
+    text-indent: -999em;
+    width: 120px;
+    height: 120px;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    }
+
+a {
+  color: #1191ad;
+  text-decoration: none;
+  }
+p {
+  margin: 0 0 15px;
+  }
+blockquote {
+  display: block;
+  margin-left: 20px;
+  padding: 0 10px;
+  border-left: 1px solid #CCC;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  }
+small {
+  font-size: 0.75em;
+  }
+  .post p small {
+    margin: -15px 0 0;
+    display: block;
+    font-style: italic;
+    }
+    .post p small a {
+      font-weight: bold;
+      color: #444;
+      border-bottom: none;
+      }
+
+/*-----------------------------------
+  Layout
+-------------------------------------*/
+#left {
+  width: 550px;
+  padding-left: 140px;
+  padding-bottom: 20px;
+  float: left;
+  }
+#right {
+  width: 120px;
+  margin-top: 0;
+  padding-left: 20px;
+  float: left;
+  }
+.post {
+  width: 960px;
+  padding-top: 20px;
+  }
+  .post:first {
+    border-top: none;
+    }
+  .post img {
+    margin: 0 0 15px;
+    max-width: 100%;
+	  vertical-align: bottom;
+	  height: auto;
+	  width: auto;
+    }
+.posts,
+.single {
+  margin-top: 20px;
+  }
+
+/*-----------------------------------
+  Post Styling
+-------------------------------------*/
+.date { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: bold; }
+
+.date {
+  position: relative;
+  text-align: right;
+  background: #fff;
+  width: 95px;
+  height: 120px;
+  }
+  .date span {
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    }
+    .date span.month-day {
+      bottom: 0;
+      }
+    .date span.year {
+      bottom: 15px;
+      font-size: 13px;
+      }
+
+.post ul,
+.post ol {
+  list-style-position: inside;
+  display: block;
+  margin: 5px 0 5px 40px;
+  }
+.post ul {
+  list-style: disc;
+  }
+.post ol {
+  list-style: decimal;
+  }
+
+/*-----------------------------------
+  Markup free clearing
+  Details: http: //perishablepress.com/press/2009/12/06/new-clearfix-hack
+-------------------------------------*/
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+* html .clearfix { height: 1%; } /* IE6 */
+*:first-child + html .clearfix { min-height: 1%; } /* IE7 */
