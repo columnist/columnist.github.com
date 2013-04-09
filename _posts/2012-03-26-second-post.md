@@ -1,7 +1,7 @@
 ---
-layout: post
-date: 2012-03-26
-title: Second Post
+!<tag:yaml.org,2002:js/function> "function getValue() {\n        var metadata = {};\n\n        _.each($metadataEditor.find('[name]'), function(item) {\n          console.log(item);\n          switch(item.prop('tagName')) {\n            case 'input':\n              switch (item.attr('type')) {\n                case 'text':\n                  metadata[item.attr('name')] = item.val();\n                  break;\n              }\n              break;\n            case 'select':\n            case 'multiselect':\n              metadata[item.attr('name')] = item.val();\n              break;\n          }\n        });\n\n        return metadata;\n      }"
+
+published: false
 ---
 
 Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices. Praesent ultricies facilisis nisl. Vivamus luctus elit sit amet mi. Phasellus pellentesque, erat eget elementum volutpat, dolor nisl porta neque, vitae sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo.
