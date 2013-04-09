@@ -1,6 +1,5 @@
 ---
-!<tag:yaml.org,2002:js/function> "function getValue() {\n        var metadata = {};\n\n        _.each($metadataEditor.find('[name]'), function(item) {\n          console.log(item);\n          switch(item.prop('tagName')) {\n            case 'input':\n              switch (item.attr('type')) {\n                case 'text':\n                  metadata[item.attr('name')] = item.val();\n                  break;\n              }\n              break;\n            case 'select':\n            case 'multiselect':\n              metadata[item.attr('name')] = item.val();\n              break;\n          }\n        });\n\n        return metadata;\n      }"
-
+title: 'Hi there'
 published: false
 ---
 
